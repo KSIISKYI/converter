@@ -48,3 +48,8 @@ Route::group(
         );
     }
 );
+
+// Redirect all non-existent routes to /instances
+Route::fallback(function () {
+    return redirect('/instances');
+});
