@@ -4,8 +4,6 @@ namespace App\Services\Instance;
 
 use App\Enums\ConvertingSchemaType;
 use App\Enums\InstanceStatus;
-use App\Interfaces\ConvertingSettingsInterface;
-use App\Interfaces\ReadingSettingsInterface;
 use App\Jobs\ProcessInstance;
 use App\Models\Instance;
 use App\Repos\Instance\InstanceRepoInterface;
@@ -114,7 +112,7 @@ class InstanceService
             'status' => InstanceStatus::PENDING,
         ]);
 
-        dispatch_sync(new ProcessInstance($instance->id));
+        dispatch(new ProcessInstance($instance->id));
     }
 
     /**

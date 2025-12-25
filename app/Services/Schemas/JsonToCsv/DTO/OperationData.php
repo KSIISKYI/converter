@@ -2,8 +2,12 @@
 
 namespace App\Services\Schemas\JsonToCsv\DTO;
 
-class OperationData
+readonly class OperationData
 {
+    /**
+     * @param string $type
+     * @param array $properties
+     */
     public function __construct(
         public string $type,
         public array $properties = [],

@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use App\Services\InstanceFileManager;
+use App\Services\Instance\InstanceFileManager;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\ServiceProvider;
 

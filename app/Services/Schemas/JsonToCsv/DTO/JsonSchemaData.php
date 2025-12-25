@@ -2,7 +2,7 @@
 
 namespace App\Services\Schemas\JsonToCsv\DTO;
 
-class JsonSchemaData
+readonly class JsonSchemaData
 {
     /**
      * @param array<JsonSchemaColumnData> $columns

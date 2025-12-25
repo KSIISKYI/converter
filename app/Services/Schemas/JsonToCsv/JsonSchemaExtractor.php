@@ -18,7 +18,10 @@ class JsonSchemaExtractor
      * Required properties for each operation
      */
     private const OPERATION_REQUIRED_PROPERTIES = [
-        'split' => ['delimiter', 'index'],
+        'split' => [
+            'delimiter',
+            'index',
+        ],
     ];
     /**
      * Extracts the CSV schema (column headers) from the JSON schema.
