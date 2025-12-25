@@ -5,7 +5,7 @@ namespace App\DTO;
 use App\Enums\SchemaOptionFieldType;
 use Illuminate\Contracts\Support\Arrayable;
 
-class OptionData implements Arrayable
+readonly class OptionData implements Arrayable
 {
     public function __construct(
         public string $name,
